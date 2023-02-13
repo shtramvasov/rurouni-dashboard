@@ -1,0 +1,26 @@
+// #TODO: font
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	display: inline;
+}
+
+html,
+body {
+	// font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+}
