@@ -11,7 +11,10 @@
 		"<THIRD_PARTY_MODULES>",
 		"^@pages/(.*)$",
 		"^@components/(.*)$",
+		"^@assets/(.*)$",
 		"^@utils/(.*)$",
+		"^@services/(.*)$",
+		"^@interfaces/(.*)$",
 		"^@hooks/(.*)$",
 		"^[./]"
 	]
