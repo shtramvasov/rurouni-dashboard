@@ -6,12 +6,15 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"component": "generate-react component",
+		"page": "generate-react component --type=page"
 	},
 	"dependencies": {
 		"classnames": "^2.3.2",
 		"dayjs": "^1.11.7",
 		"firebase": "^9.15.0",
+		"generate-react-cli": "^8.2.0",
 		"path": "^0.12.7",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
