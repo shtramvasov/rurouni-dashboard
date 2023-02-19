@@ -1,8 +1,32 @@
-// #TODO: font
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 300;
+	src: local('Gilroy'), url('../fonts/Gilroy-Light.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 400;
+	src: local('Gilroy'), url('../fonts/Gilroy-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 500;
+	src: local('Gilroy'), url('../fonts/Gilroy-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 600;
+	src: local('Gilroy'), url('../fonts/Gilroy-Semibold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-weight: 700;
+	src: local('Gilroy'), url('../fonts/Gilroy-Bold.woff2') format('woff2');
+}
 
 *,
 *::after,
@@ -21,6 +45,11 @@ h4 {
 
 html,
 body {
-	// font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
+}
+
+@layer base {
+	html {
+		font-family: 'Gilroy', sans-serif;
+	}
 }
