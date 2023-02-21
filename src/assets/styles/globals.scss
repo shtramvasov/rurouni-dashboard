@@ -58,4 +58,8 @@ img {
 	html {
 		font-family: 'Gilroy', sans-serif;
 	}
+
+	.active {
+		@apply text-white sm:text-blue-primary bg-blue-primary sm:bg-white;
+	}
 }

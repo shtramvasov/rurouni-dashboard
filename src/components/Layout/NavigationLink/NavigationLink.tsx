@@ -12,7 +12,8 @@ const NavigationLink: FC<{ item: INavigation }> = ({ item }) => {
 				classnames(styles.link, { active: isActive })
 			}
 		>
-			{item.title}
+			{<item.icon className={styles.icon} />}
+			<span className={styles.title}>{item.title}</span>
 		</NavLink>
 	)
 }

@@ -1,5 +1,4 @@
-import { AiOutlineUser } from 'react-icons/ai'
-import { CiCircleList } from 'react-icons/ci'
+import { AiOutlineUser, AiOutlineUnorderedList } from 'react-icons/ai'
 import { HiOutlineClipboardList } from 'react-icons/hi'
 import { INavigation } from './navigation.interface'
 
@@ -12,7 +11,7 @@ export const NavigationData: INavigation[] = [
 	{
 		title: 'Упражнения',
 		link: '/exercises',
-		icon: CiCircleList,
+		icon: AiOutlineUnorderedList,
 	},
 	{
 		title: 'Календарь тренировок',

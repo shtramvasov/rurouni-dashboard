@@ -1,3 +1,7 @@
-.layout {}
+.layout {
+  @apply flex flex-col
+}
 
-.wrapper {}
+.wrapper {
+  @apply bg-gray-light h-screen py-6 px-10
+}

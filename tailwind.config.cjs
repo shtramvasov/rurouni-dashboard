@@ -9,9 +9,9 @@ module.exports = {
 				secondary: '#0D1333',
 			},
 			gray: {
-				primary: '#BBBCC1',
-				secondary: '#D8D9DC',
-				light: '#F9F9F9',
+				primary: '#D8D9DC',
+				secondary: '#ECECEE',
+				light: '#f9f9fb',
 			},
 			green: {
 				primary: '#70CD62',
@@ -22,8 +22,8 @@ module.exports = {
 				secondary: '#8FBDFF',
 			},
 			red: {
-				primary: '#FF978E',
-				secondary: '#FF7468',
+				primary: '#FF7468',
+				secondary: '#FF978E',
 			},
 			yellow: {
 				primary: '#FCCE68',
