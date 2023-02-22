@@ -1,9 +1,6 @@
 .link {
 	@apply flex items-center text-black-primary transition p-2 rounded-md;
 
-	&:hover {
-		@apply bg-blue-secondary sm:bg-white text-white sm:text-blue-secondary;
-	}
 }
 
 .icon {
