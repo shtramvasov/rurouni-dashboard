@@ -18,8 +18,8 @@ module.exports = {
 			},
 			slate: {
 				primary: '#B1BAE6',
-				dark: '#8A98DA',
-				light: '#DDE1F4',
+				dark: '#BEC5EA',
+				light: '#ECEEF9',
 			},
 			green: {
 				primary: '#61C86A',
@@ -27,8 +27,8 @@ module.exports = {
 				light: '#9CDDA2',
 			},
 			blue: {
-				primary: '#3866DD',
-				dark: '#5A80E3',
+				primary: '#5A80E3',
+				dark: '#3866DD',
 				light: '#98B0EE',
 			},
 			red: {

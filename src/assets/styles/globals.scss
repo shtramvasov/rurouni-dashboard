@@ -61,6 +61,6 @@ img {
 	}
 
 	.active {
-		
+		@apply text-white-primary bg-blue-dark hover:text-white-primary hover:bg-blue-dark;
 	}
 }

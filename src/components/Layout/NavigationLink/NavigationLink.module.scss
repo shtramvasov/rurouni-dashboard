@@ -1,12 +1,15 @@
 .link {
-	@apply flex items-center text-black-primary transition p-2 rounded-md;
+	@apply flex items-center text-black-light font-medium transition py-2 px-4 sm:px-8 sm:rounded-b-3xl rounded-md;
 
+	&:hover {
+		@apply text-black-light bg-slate-light sm:text-blue-dark;
+	}
 }
 
 .icon {
-	@apply inline sm:hidden;
+	@apply inline md:hidden;
 }
 
 .title {
-	@apply hidden sm:inline;
+	@apply hidden md:inline;
 }

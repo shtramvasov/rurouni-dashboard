@@ -14,7 +14,7 @@ export const NavigationData: INavigation[] = [
 		icon: AiOutlineUnorderedList,
 	},
 	{
-		title: 'Календарь тренировок',
+		title: 'Календарь',
 		link: '/calendar',
 		icon: HiOutlineClipboardList,
 	},
