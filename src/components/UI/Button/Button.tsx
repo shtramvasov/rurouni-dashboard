@@ -2,6 +2,7 @@ import classnames from 'classnames'
 import { FC, PropsWithChildren } from 'react'
 import { IButton } from './Button.interface'
 import styles from './Button.module.scss'
+
 const Button: FC<PropsWithChildren<IButton>> = ({
 	children,
 	className,
@@ -10,6 +11,7 @@ const Button: FC<PropsWithChildren<IButton>> = ({
 	circle,
 	large,
 	wide,
+	responsive,
 	...rest
 }) => {
 	return (
@@ -20,6 +22,7 @@ const Button: FC<PropsWithChildren<IButton>> = ({
 				[styles.circle]: circle,
 				[styles.large]: large,
 				[styles.wide]: wide,
+				[styles.responsive]: responsive,
 			})}
 			{...rest}
 		>

@@ -22,6 +22,10 @@ export const router = createBrowserRouter([
 		element: <CalendarPage />,
 	},
 	{
+		path: '/auth',
+		element: <CalendarPage />, //#TODO: Auth Page
+	},
+	{
 		path: '/*',
 		element: <DashboardPage />,
 		loader: () => redirect('/'),

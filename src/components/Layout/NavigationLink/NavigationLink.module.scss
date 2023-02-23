@@ -1,8 +1,8 @@
 .link {
-	@apply flex items-center text-black-light font-medium transition py-2 px-4 sm:px-8 sm:rounded-b-3xl rounded-md;
+	@apply flex items-center text-black-light font-medium transition py-2 px-4 sm:px-8 md:rounded-b-3xl rounded-md;
 
 	&:hover {
-		@apply text-black-light bg-slate-light sm:text-blue-dark;
+		@apply text-white-light bg-slate-primary md:bg-slate-light md:text-blue-dark;
 	}
 }
 

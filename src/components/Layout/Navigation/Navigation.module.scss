@@ -1,3 +1,5 @@
 .navigation {
-	@apply flex justify-between py-4 px-4 gap-4 md:gap-6 md:px-8 xl:gap-14 xl:px-24 rounded-full sm:bg-slate-light;
+	@apply flex justify-center w-full sm:w-auto
+  p-2.5 sm:py-4 sm:px-4 md:px-6 xl:px-24 gap-12  rounded-full 
+  bg-slate-light;
 }

@@ -6,4 +6,5 @@ export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   circle?: boolean
   large?: boolean
   wide?: boolean
+  responsive?: boolean
 }
