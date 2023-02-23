@@ -60,7 +60,23 @@ img {
 		@apply bg-white-light;
 	}
 
+	h1 {
+		@apply text-5xl;
+	}
+	h2 {
+		@apply text-3xl;
+	}
+	h3 {
+		@apply text-2xl;
+	}
+
 	.active {
 		@apply text-white-primary bg-blue-dark hover:text-white-primary hover:bg-blue-dark;
+	}
+}
+
+@layer utilities {
+	.responsive {
+		@apply w-full sm:w-auto;
 	}
 }

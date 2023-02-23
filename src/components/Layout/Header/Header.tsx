@@ -12,7 +12,7 @@ const Header: FC = () => {
 		<header className={styles.header}>
 			<Logo />
 			<Navigation links={links} />
-			<NavLink className='w-full sm:w-auto' to='/auth'>
+			<NavLink className='responsive' to='/auth'>
 				<Button blue responsive>
 					<HiOutlinePlus /> Записать тренировку
 				</Button>
