@@ -57,7 +57,7 @@ img {
 @layer base {
 	html {
 		font-family: 'Gilroy', sans-serif;
-    @apply bg-white-light
+		@apply bg-white-light;
 	}
 
 	.active {

@@ -1,0 +1,32 @@
+.button {
+	@apply relative flex justify-center items-center cursor-pointer transition
+  py-2 px-6 rounded-md gap-2.5
+  bg-black-light text-white-light;
+
+	&:hover {
+		@apply bg-slate-dark text-black-light;
+	}
+}
+.green {
+	@apply bg-green-dark;
+
+	&:hover {
+		@apply bg-green-primary text-white-light;
+	}
+}
+.blue {
+	@apply bg-blue-dark;
+
+	&:hover {
+		@apply bg-blue-primary text-white-light;
+	}
+}
+.circle {
+	@apply rounded-full p-3;
+}
+.wide {
+	@apply w-full;
+}
+.large {
+	@apply p-4 max-h-12 text-lg;
+}
