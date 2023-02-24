@@ -7,4 +7,5 @@ export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   large?: boolean
   wide?: boolean
   responsive?: boolean
+  loading?: boolean
 }
