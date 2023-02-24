@@ -8,7 +8,7 @@ interface IExercise {
 }
 
 export interface IRecord {
-  uid: string
+  id: string
   name: string
   date: any //#TODO Timestamp?
   category: number
