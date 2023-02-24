@@ -1,7 +1,7 @@
 import { ResponsiveCalendar } from '@nivo/calendar'
-import { BasicTooltip } from '@nivo/tooltip'
 import { FC } from 'react'
 import { useQuery } from 'react-query'
+import HeatmapTooltip from '@components/HeatmapTooltip/HeatmapTooltip'
 import { Loader } from '@components/UI'
 import { currentYear } from '@utils/convertDates'
 import { recordsValues } from '@utils/recordsValues'
@@ -21,6 +21,7 @@ const Calendar: FC = () => {
 					from={`${currentYear}-01-01`}
 					to={`${currentYear}-12-31`}
 					data={recordsValues(data?.data ?? [])}
+					tooltip={HeatmapTooltip}
 					{...configuration}
 				/>
 			) : (
