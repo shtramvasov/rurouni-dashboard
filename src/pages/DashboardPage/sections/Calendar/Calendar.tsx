@@ -1,4 +1,5 @@
 import { ResponsiveCalendar } from '@nivo/calendar'
+import { BasicTooltip } from '@nivo/tooltip'
 import { FC } from 'react'
 import { useQuery } from 'react-query'
 import { Loader } from '@components/UI'
