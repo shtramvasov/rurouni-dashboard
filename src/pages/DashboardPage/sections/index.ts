@@ -1,3 +1,3 @@
-import CalendarHeatmap from './CalendarHeatmap/CalendarHeatmap'
+import Calendar from './Calendar/Calendar'
 
-export { CalendarHeatmap }
+export { Calendar }
