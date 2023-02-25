@@ -1,0 +1,17 @@
+.cardStat {
+	@apply flex flex-col items-center gap-3 py-3 
+  rounded-md shadow-sm
+  bg-white-primary;
+}
+
+.image {
+	@apply object-contain w-20 h-20;
+}
+
+.description {
+	@apply flex flex-col items-center text-lg;
+
+	p {
+		@apply font-bold text-black-light;
+	}
+}
