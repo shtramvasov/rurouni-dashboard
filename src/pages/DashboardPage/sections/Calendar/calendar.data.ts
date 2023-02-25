@@ -24,7 +24,7 @@ export const configuration = {
 	theme: theme,
 	pixelRatio: 20,
 	colors: ['#ECEEF9', '#6bcc74', '#9cdda2'],
-	emptyColor: '#EAECF4',
+	emptyColor: '#ECEEF9',
 	margin: { left: 25, top: 25 },
 	// days
 	dayBorderWidth: 0,

@@ -1,8 +1,14 @@
 import { FC } from 'react'
-import styles from './ExercisesPage.module.scss'
+import { useQuery } from 'react-query'
+import Layout from '@components/Layout/Layout'
+import { ExercisesSevice } from '@services/exercises'
 
 const ExercisesPage: FC = () => {
-	return <div className={styles.exercisesPage}>ExercisesPage</div>
+	const { data } = useQuery('exercises', () =>
+		ExercisesSevice.fetchAllExercises(),
+	)
+	console.log(data)
+	return <Layout>ExercisesPage</Layout>
 }
 
 export default ExercisesPage

@@ -1,8 +1,9 @@
+import Layout from '@components/Layout/Layout'
 import { FC } from 'react'
-import styles from './ExercisePage.module.scss'
+
 
 const ExercisePage: FC = () => {
-	return <div className={styles.exercisePage}>ExercisePage</div>
+	return <Layout>ExercisePage</Layout>
 }
 
 export default ExercisePage

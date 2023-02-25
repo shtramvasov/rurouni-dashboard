@@ -1,8 +1,9 @@
+import Layout from '@components/Layout/Layout'
 import { FC } from 'react'
-import styles from './CalendarPage.module.scss'
+
 
 const CalendarPage: FC = () => {
-	return <div className={styles.calendarPage}>CalendarPage</div>
+	return <Layout>CalendarPage</Layout>
 }
 
 export default CalendarPage

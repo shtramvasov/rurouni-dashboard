@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { HiOutlinePlus } from 'react-icons/hi'
+import { HiViewGridAdd } from 'react-icons/hi'
 import { NavLink } from 'react-router-dom'
 import Navigation from '@components/Layout/Navigation/Navigation'
 import { NavigationData as links } from '@components/Layout/Navigation/navigation.data'
@@ -14,7 +14,7 @@ const Header: FC = () => {
 			<Navigation links={links} />
 			<NavLink className='responsive' to='/auth'>
 				<Button blue responsive>
-					<HiOutlinePlus /> Записать тренировку
+					<HiViewGridAdd /> Записать тренировку
 				</Button>
 			</NavLink>
 		</header>

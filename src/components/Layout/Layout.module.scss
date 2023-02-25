@@ -3,5 +3,5 @@
 }
 
 .wrapper {
-	@apply p-3 md:py-6 md:px-32;
+	@apply flex flex-col gap-10 p-3 md:py-6 md:px-32;
 }

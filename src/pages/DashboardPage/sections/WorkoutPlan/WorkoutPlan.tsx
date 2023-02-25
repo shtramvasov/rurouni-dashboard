@@ -19,12 +19,6 @@ const WorkoutPlan: FC = () => {
 				{data?.data.map(item => (
 					<CardTemplate key={item.id} data={item} />
 				))}
-				{data?.data.map(item => (
-					<CardTemplate key={item.id} data={item} />
-				))}
-				{data?.data.map(item => (
-					<CardTemplate key={item.id} data={item} />
-				))}
 			</section>
 		</section>
 	)
