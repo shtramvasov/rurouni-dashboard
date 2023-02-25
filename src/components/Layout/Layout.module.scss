@@ -1,7 +1,7 @@
 .layout {
-  @apply flex flex-col
+	@apply flex flex-col;
 }
 
 .wrapper {
-  @apply h-screen p-3 md:py-6 md:px-32 
+	@apply p-3 md:py-6 md:px-32;
 }

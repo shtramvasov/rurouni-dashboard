@@ -6,5 +6,5 @@ interface IExercise {
 export interface ITemplate {
 	id: string
 	name: string
-	exercises: IExercise
+	exercises: IExercise[]
 }

@@ -1,7 +1,11 @@
 .cardStat {
-	@apply flex flex-col items-center gap-3 py-3 
+	@apply flex flex-col items-center gap-3 py-3 transition duration-500
   rounded-md shadow-sm
-  border border-slate-primary;
+  bg-white-primary;
+
+  &:hover {
+    @apply shadow-md
+  }
 }
 
 .image {
