@@ -13,12 +13,12 @@ module.exports = {
 			},
 			gray: {
 				primary: '#d6d6d6',
-				dark: '#bebebe',
+				dark: '#747881',
 				light: '#E7E7E7',
 			},
 			slate: {
 				primary: '#e1e4f4',
-				dark: '#dde1f9',
+				dark: '#96A1DD',
 				light: '#ECEEF9',
 			},
 			green: {

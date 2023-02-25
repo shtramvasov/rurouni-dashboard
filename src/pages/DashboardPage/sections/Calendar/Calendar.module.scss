@@ -1,3 +1,4 @@
 .calendar {
-	@apply hidden lg:flex md:h-32 lg:h-52 xl:h-64 bg-white-primary shadow-sm rounded-lg py-8;
+	@apply hidden sm:flex h-32 sm:h-52
+  border border-slate-primary shadow-sm rounded-lg lg:py-5
 }

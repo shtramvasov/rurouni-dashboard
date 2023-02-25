@@ -24,11 +24,11 @@ export const configuration = {
 	theme: theme,
 	pixelRatio: 20,
 	colors: ['#ECEEF9', '#6bcc74', '#9cdda2'],
-	emptyColor: '#f5f7fb',
+	emptyColor: '#EAECF4',
 	margin: { left: 25, top: 25 },
 	// days
 	dayBorderWidth: 0,
-	daySpacing: 4.5,
+	daySpacing: 4,
 	// months
 	monthLabels: russianMonths,
 	monthLegend: (year: number, month: number) => russianMonths[month],

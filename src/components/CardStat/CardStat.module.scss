@@ -1,7 +1,7 @@
 .cardStat {
 	@apply flex flex-col items-center gap-3 py-3 
   rounded-md shadow-sm
-  bg-white-primary;
+  border border-slate-primary;
 }
 
 .image {
@@ -12,6 +12,10 @@
 	@apply flex flex-col items-center text-lg;
 
 	p {
-		@apply font-bold text-black-light;
+		@apply font-bold text-xl text-blue-primary;
+	}
+
+	span {
+		@apply text-black-light font-bold;
 	}
 }
