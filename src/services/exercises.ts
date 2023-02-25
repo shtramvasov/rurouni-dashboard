@@ -1,4 +1,4 @@
-import { collection, getDocs } from 'firebase/firestore'
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
 import { IExercise } from '@interfaces/IExercise'
 import { database } from './firebase'
 
@@ -14,5 +14,10 @@ export const ExercisesSevice = {
 		return {
 			data: exercises,
 		}
+	},
+	async fetchExerciseById(id: string): Promise<{ data: IExercise }> {
+		const exerciseRef = doc(database, 'exercises', id)
+		const responce = await getDoc(exerciseRef)
+		return { data: responce.data() as IExercise}
 	},
 }
