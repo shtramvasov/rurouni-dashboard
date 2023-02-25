@@ -1,5 +1,6 @@
 import { getWeights } from '@utils/exerciseUtils'
 import { IExercise } from '@interfaces/IExercise'
+import { countWorkouts } from './../../utils/exerciseUtils'
 import calories from '@assets/images/calories.png'
 import notification from '@assets/images/notification.png'
 import record from '@assets/images/record.png'
@@ -19,11 +20,11 @@ export const getExercisesData = (exercise: IExercise | undefined) => [
 	{
 		image: notification,
 		title: 'Всего тренировок',
-		value: exercise?.weight ?? 0,
+		value: countWorkouts(exercise?.history),
 	},
 	{
 		image: calories,
 		title: 'Калорий сгорело',
-		value: exercise?.weight ?? 0,
+		value: exercise?.totalCalories ?? 0,
 	},
 ]
