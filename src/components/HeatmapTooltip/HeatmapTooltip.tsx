@@ -1,7 +1,7 @@
 import { BasicTooltip } from '@nivo/tooltip'
 import { FC } from 'react'
 
-const HeatmapTooltip: FC = data => {
+const HeatmapTooltip: FC = (data: any) => {
 	return (
 		<BasicTooltip
 			id={data.data.name}

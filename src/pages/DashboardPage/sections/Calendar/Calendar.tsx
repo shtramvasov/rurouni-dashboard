@@ -13,7 +13,6 @@ const Calendar: FC = () => {
 	const { data, isFetched } = useQuery('records', () =>
 		RecordsSevice.fetchAllRecords(),
 	)
-
 	return (
 		<section className={styles.calendar}>
 			{isFetched ? (

@@ -10,7 +10,7 @@ interface IExercise {
 export interface IRecord {
   id: string
   name: string
-  date: any //#TODO Timestamp?
+  date: any
   category: number
   exercises: IExercise[]
   calories: number

@@ -12,13 +12,13 @@ module.exports = {
 				light: '#243962',
 			},
 			gray: {
-				primary: '#A5AAB6',
-				dark: '#8991A0',
-				light: '#C0C4CC',
+				primary: '#d6d6d6',
+				dark: '#bebebe',
+				light: '#E7E7E7',
 			},
 			slate: {
-				primary: '#B1BAE6',
-				dark: '#BEC5EA',
+				primary: '#e1e4f4',
+				dark: '#dde1f9',
 				light: '#ECEEF9',
 			},
 			green: {
