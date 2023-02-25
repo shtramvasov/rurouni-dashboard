@@ -2,12 +2,12 @@ import { FC } from 'react'
 import { useQuery } from 'react-query'
 import CardTemplate from '@components/CardTemplate/CardTemplate'
 import { Heading } from '@components/UI'
-import { TemplatesSevice } from '@services/templates'
+import { TemplatesService } from '@services/templates'
 import styles from './WorkoutPlan.module.scss'
 
 const WorkoutPlan: FC = () => {
 	const { data } = useQuery('templates', () =>
-		TemplatesSevice.fetchAllTemplates(),
+		TemplatesService.fetchAllTemplates(),
 	)
 
 	return (

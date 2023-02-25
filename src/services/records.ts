@@ -4,7 +4,7 @@ import { database } from './firebase'
 
 const recordsdb = collection(database, 'records')
 
-export const RecordsSevice = {
+export const RecordsService = {
 	async fetchAllRecords(): Promise<{ data: IRecord[] }> {
 		const querySnapshot = await getDocs(recordsdb)
 		const records: IRecord[] = []

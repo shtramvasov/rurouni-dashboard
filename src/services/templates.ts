@@ -4,7 +4,7 @@ import { database } from './firebase'
 
 const templatesdb = collection(database, 'templates')
 
-export const TemplatesSevice = {
+export const TemplatesService = {
 	async fetchAllTemplates(): Promise<{ data: ITemplate[] }> {
 		const querySnapshot = await getDocs(templatesdb)
 		const templates: ITemplate[] = []
