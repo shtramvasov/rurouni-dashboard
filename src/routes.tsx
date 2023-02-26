@@ -1,4 +1,5 @@
 import { createBrowserRouter, redirect } from 'react-router-dom'
+import AuthPage from '@pages/AuthPage/AuthPage'
 import CalendarPage from '@pages/CalendarPage/CalendarPage'
 import DashboardPage from '@pages/DashboardPage/DashboardPage'
 import ExercisePage from '@pages/ExercisePage/ExercisePage'
@@ -23,7 +24,7 @@ export const router = createBrowserRouter([
 	},
 	{
 		path: '/auth',
-		element: <CalendarPage />, //#TODO: Auth Page
+		element: <AuthPage />,
 	},
 	{
 		path: '/*',
