@@ -12,7 +12,9 @@ export const RecordsService = {
 			records.push({ id: doc.id, ...doc.data() } as IRecord)
 		})
 		return {
-			data: records,
+			data: records.sort((a, b) =>
+				b.date.toString().localeCompare(a.date.toString()),
+			),
 		}
 	},
 }
