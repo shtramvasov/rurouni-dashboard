@@ -9,7 +9,7 @@ import calories from '@assets/images/calories.png'
 import cardio from '@assets/images/cardio.png'
 import weights from '@assets/images/weights.png'
 
-export const getData = (records: IRecord[] | undefined) => [
+export const getRecordsData = (records: IRecord[] | undefined) => [
 	{
 		image: weights,
 		title: 'Силовых тренировок',
