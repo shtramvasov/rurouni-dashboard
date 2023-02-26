@@ -4,12 +4,20 @@ import { Loader } from '@components/UI'
 import { useExercises } from '@hooks/useExercises'
 import styles from './ExercisesList.module.scss'
 
-const ExercisesList: FC = () => {
+interface IProps {
+	filter: string
+}
+
+const ExercisesList: FC<IProps> = ({ filter }) => {
 	const { data, isFetched } = useExercises()
+
+	const filteredData = data?.data.filter(exercise =>
+		exercise.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase()),
+	)
 	return (
 		<section className={styles.exercisesList}>
 			{isFetched ? (
-				data?.data.map(exercise => (
+				filteredData?.map(exercise => (
 					<CardExercise key={exercise.id} data={exercise} />
 				))
 			) : (
