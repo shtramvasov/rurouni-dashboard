@@ -1,1 +1,5 @@
-.exercisesList {}
+.exercisesList {
+  @apply grid 
+  gap-6
+  xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2
+}

@@ -1,0 +1,17 @@
+.cardExercise {
+	@apply flex flex-col items-center justify-center p-6 gap-0.5 transition duration-500
+  rounded-md shadow-sm 
+  bg-white-primary;
+
+	&:hover {
+		@apply shadow-md;
+	}
+
+	span {
+		@apply flex items-center justify-center text-sm text-black-light;
+	}
+}
+
+.icon {
+	@apply text-xl text-blue-dark;
+}
