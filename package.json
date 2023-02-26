@@ -27,6 +27,7 @@
 		"react-query": "^3.39.3",
 		"react-router-dom": "^6.6.1",
 		"react-tooltip": "^5.8.3",
+		"recharts": "^2.4.3",
 		"sass": "^1.57.1"
 	},
 	"devDependencies": {

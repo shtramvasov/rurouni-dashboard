@@ -1,4 +1,4 @@
-interface IHistory {
+export interface IHistory {
   date: any
   weight: number
 }
