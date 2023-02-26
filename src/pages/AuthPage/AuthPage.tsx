@@ -1,6 +1,7 @@
 import { FC, useState, FormEvent } from 'react'
 import PinInput from 'react-pin-input'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 import Layout from '@components/Layout/Layout'
 import { Button, Heading } from '@components/UI'
 import styles from './AuthPage.module.scss'
@@ -18,7 +19,7 @@ const AuthPage: FC = () => {
 			localStorage.setItem('secret', secret)
 			navigate('/admin')
 		} else {
-			console.log('Пин неудача')
+			toast.error('Неверный пин-код')
 		}
 	}
 	return (
@@ -27,7 +28,6 @@ const AuthPage: FC = () => {
 				<Heading centered bold>
 					Код для авторизации
 				</Heading>
-
 				<form className={styles.authform} onSubmit={onSubmit}>
 					<PinInput
 						length={4}

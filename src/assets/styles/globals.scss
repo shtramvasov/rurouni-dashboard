@@ -80,3 +80,11 @@ img {
 		@apply w-full sm:w-auto;
 	}
 }
+
+// .Toastify__toast {
+// 	@apply text-sm;
+// }
+
+.Toastify__toast--error {
+	@apply bg-red-light text-white-primary;
+}
