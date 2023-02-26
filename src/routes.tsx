@@ -1,4 +1,5 @@
 import { createBrowserRouter, redirect } from 'react-router-dom'
+import AdminPage from '@pages/AdminPage/AdminPage'
 import AuthPage from '@pages/AuthPage/AuthPage'
 import CalendarPage from '@pages/CalendarPage/CalendarPage'
 import DashboardPage from '@pages/DashboardPage/DashboardPage'
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
 	{
 		path: '/auth',
 		element: <AuthPage />,
+	},
+	{
+		path: '/admin',
+		element: <AdminPage />,
 	},
 	{
 		path: '/*',
