@@ -1,13 +1,10 @@
 import { FC } from 'react'
-import { useQuery } from 'react-query'
 import { Loader } from '@components/UI'
-import { ExercisesService } from '@services/exercises'
+import { useExercises } from '@hooks/useExercises'
 import styles from './ExercisesList.module.scss'
 
 const ExercisesList: FC = () => {
-	const { data, isFetched } = useQuery('exercises', () =>
-		ExercisesService.fetchAllExercises(),
-	)
+	const { data, isFetched } = useExercises()
 	return (
 		<section className={styles.exercisesList}>
 			{isFetched ? (
