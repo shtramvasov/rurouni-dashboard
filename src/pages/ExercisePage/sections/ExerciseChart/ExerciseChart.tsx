@@ -5,8 +5,10 @@ import {
 	Line,
 	CartesianGrid,
 	XAxis,
-	YAxis, // Tooltip,
+	YAxis,
+	Tooltip,
 } from 'recharts'
+import ChartTooltip from '@components/ChartTooltip/ChartTooltip'
 import { Heading } from '@components/UI'
 import { parseHistory } from '@utils/exerciseUtils'
 import { IHistory } from '@interfaces/IExercise'
@@ -24,7 +26,7 @@ const ExerciseChart: FC<IProps> = ({ data, name }) => {
 	return (
 		<section className={styles.wrapper}>
 			<Heading size='small' uppercase>
-				<b className='text-black-light'>{name}</b> - Изменение веса
+				<b className='text-black-light'>{name}</b> — Изменение веса
 			</Heading>
 			<div className={styles.chart}>
 				<ResponsiveContainer height={450}>
@@ -32,6 +34,7 @@ const ExerciseChart: FC<IProps> = ({ data, name }) => {
 						<CartesianGrid {...configuration.grid} />
 						<XAxis {...configuration.XAxis} />
 						<YAxis type='number' {...configuration.YAxis} />
+						<Tooltip content={<ChartTooltip active payload />} />
 						<Line type='monotone' {...configuration.line} />
 					</LineChart>
 				</ResponsiveContainer>
