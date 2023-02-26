@@ -1,16 +1,13 @@
 import { FC } from 'react'
-import { useQuery } from 'react-query'
 import Layout from '@components/Layout/Layout'
 import Statistics from '@components/Statistics/Statistics'
 import { Loader } from '@components/UI'
-import { RecordsService } from '@services/records'
+import { useRecords } from '@hooks/useRecords'
 import { Calendar, WorkoutPlan } from './sections'
 import { getData } from './statistics.data'
 
 const DashboardPage: FC = () => {
-	const { data: records, isFetched } = useQuery('records', () =>
-		RecordsService.fetchAllRecords(),
-	)
+	const { data: records, isFetched } = useRecords()
 
 	const data = getData(records?.data)
 	return (

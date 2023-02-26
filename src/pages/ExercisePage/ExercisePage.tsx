@@ -8,7 +8,7 @@ import { getExercisesData } from './statistics.data'
 
 const ExercisePage: FC = () => {
 	const { id } = useParams()
-	const { data: exercise } = useQuery('exercises', () =>
+	const { data: exercise } = useQuery(['exercise', id], () =>
 		ExercisesService.fetchExerciseById(id as string),
 	)
 	const data = getExercisesData(exercise?.data)

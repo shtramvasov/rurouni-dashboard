@@ -1,15 +1,13 @@
 import { FC } from 'react'
-import { useQuery } from 'react-query'
 import Layout from '@components/Layout/Layout'
-import { ExercisesService } from '@services/exercises'
-import { getExercisesData } from '@pages/ExercisePage/statistics.data'
+import { ExercisesList } from './sections'
 
 const ExercisesPage: FC = () => {
-	const { data } = useQuery('exercises', () =>
-		ExercisesService.fetchAllExercises(),
+	return (
+		<Layout>
+			<ExercisesList />
+		</Layout>
 	)
-
-	return <Layout>ExercisesPage</Layout>
 }
 
 export default ExercisesPage
