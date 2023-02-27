@@ -1,7 +1,7 @@
 import {
 	reduceTrainings,
 	recordsProgress,
-	countCalories,
+	countTotalCalories,
 } from '@utils/recordsUtils'
 import { IRecord } from '@interfaces/IRecord'
 import calendar from '@assets/images/calendar.png'
@@ -28,6 +28,6 @@ export const getRecordsData = (records: IRecord[] | undefined) => [
 	{
 		image: calories,
 		title: 'Всего калорий сгорело',
-		value: countCalories(records),
+		value: countTotalCalories(records),
 	},
 ]

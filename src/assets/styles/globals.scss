@@ -48,6 +48,18 @@ body {
 	font-size: 16px;
 }
 
+body::-webkit-scrollbar {
+	width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	@apply bg-slate-primary;
+}
+
+body::-webkit-scrollbar-thumb {
+	@apply bg-gray-dark rounded-[20px];
+}
+
 img {
 	user-select: none;
 	-webkit-user-drag: none;

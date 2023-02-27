@@ -1,4 +1,4 @@
-interface IExercise {
+export interface IRecordExercise {
 	id: string
 	name: string
 	weight: number
@@ -12,6 +12,6 @@ export interface IRecord {
 	name: string
 	date: any
 	category: number
-	exercises: IExercise[]
+	exercises: IRecordExercise[]
 	calories: number
 }

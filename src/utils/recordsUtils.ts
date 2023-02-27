@@ -1,4 +1,4 @@
-import { IRecord } from '@interfaces/IRecord'
+import { IRecord, IRecordExercise } from '@interfaces/IRecord'
 
 export const reduceTrainings = (
 	array: IRecord[] | undefined,
@@ -21,10 +21,19 @@ export const recordsProgress = (array: IRecord[] | undefined) => {
 	return 0 + ' %'
 }
 
-export const countCalories = (array: IRecord[] | undefined) => {
+export const countTotalCalories = (array: IRecord[] | undefined) => {
 	if (array != undefined) {
 		const result = array.reduce((acc, current) => acc + current.calories, 0)
 		return result
 	}
 	return 0
+}
+
+export const calculateCalories = (
+	exercise: IRecordExercise,
+	perRep: number,
+) => {
+	return Math.ceil(
+		exercise.reps * perRep * exercise.sets + exercise.weight * 0.15,
+	)
 }

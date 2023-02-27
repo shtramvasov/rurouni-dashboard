@@ -8,6 +8,10 @@ export const timestampToDate = (date: Timestamp): string => {
 	return dayjs(date?.toDate()).format('YYYY-MM-DD')
 }
 
+export const dateToTimestamp = (value: string | Date): Timestamp => {
+	return Timestamp.fromDate(new Date(value))
+}
+
 export const localeDate = (date: string | Timestamp): string => {
 	if (typeof date === 'string') {
 		return dayjs(date as string)
