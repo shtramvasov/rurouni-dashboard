@@ -1,13 +1,3 @@
 .authPage {
 	@apply flex flex-col items-center gap-8 mt-12 sm:mt-24;
 }
-
-.authform {
-	@apply flex flex-col items-center justify-center transition duration-500
-  w-full sm:w-[32rem] p-12 gap-6 rounded-md shadow-sm
-  bg-white-primary;
-
-	&:hover {
-		@apply shadow-md;
-	}
-}

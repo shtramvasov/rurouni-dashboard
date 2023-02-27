@@ -23,7 +23,7 @@ export const configuration = {
 	// styles
 	theme: theme,
 	pixelRatio: 20,
-	colors: ['#ECEEF9', '#6bcc74', '#9cdda2'],
+	colors: ['#ECEEF9', '#50C75B', '#9cdda2'],
 	emptyColor: '#ECEEF9',
 	margin: { left: 25, top: 25 },
 	// days
