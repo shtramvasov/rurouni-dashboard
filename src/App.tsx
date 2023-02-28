@@ -5,13 +5,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { router } from './routes'
 
-const queryClient = new QueryClient({
-	defaultOptions: {
-		queries: {
-			refetchOnWindowFocus: false,
-		},
-	},
-})
+const queryClient = new QueryClient()
 
 const App: FC = () => {
 	return (

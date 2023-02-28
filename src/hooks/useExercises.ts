@@ -1,4 +1,4 @@
-import { useQuery } from 'react-query'
+import { useQuery} from 'react-query'
 import { ExercisesService } from '@services/exercises'
 
 export const useExercises = () => {

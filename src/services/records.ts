@@ -1,4 +1,4 @@
-import { collection, getDocs } from 'firebase/firestore'
+import { addDoc, collection, getDocs } from 'firebase/firestore'
 import { IRecord } from '@interfaces/IRecord'
 import { database } from './firebase'
 
@@ -15,6 +15,18 @@ export const RecordsService = {
 			data: records.sort((a, b) =>
 				b.date.toString().localeCompare(a.date.toString()),
 			),
+		}
+	},
+	async addRecord(
+		data: Omit<IRecord, 'id'>,
+	): Promise<{ data: null } | undefined> {
+		try {
+			await addDoc(recordsdb, {
+				...data,
+			})
+			return { data: null }
+		} catch (error: any) {
+			console.log(error.message)
 		}
 	},
 }
